@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre nós</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.full-website {
+    max-width: 100%;
+}
+
+.fixed-width {
+    width: 1270px;
+    margin: auto;
+}
+
+.bg-frist {
+    background: url(https://www.smnadv.com.br/wp-content/uploads/2019/09/Os-direitos-de-imigrantes-em-territo%CC%81rio-nacional-ADVSN.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 20px 0 220px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header-section {}
+
+.header-left {
+    float: left;
+    width: 20%;
+    transition: .8s;
+
+}
+
+.header-left h1 {
+    color: white;
+    font-size: 40px;
+    float: ;
+}
+
+.header-manu {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+.header-manu ul {}
+
+.header-manu ul li {
+    display: inline-block;
+}
+
+.header-manu ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 15px;
+    transition: .5s;
+}
+
+.header-manu ul li a:hover {
+    color: red;
+}
+
+.header-icon {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.header-icon ul {}
+
+.header-icon ul li {
+    display: inline-block;
+}
+
+.header-icon ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.header-icon ul li a i {}
+
+.banner {
+    margin-top: 320px;
+    text-align: center;
+    color: white;
+    width: 530px;
+    margin: 320px auto 0 auto;
+}
+
+.banner h3 {
+    font-size: 22px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.banner p {
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 41px;
+    margin: 25px 0;
+    line-height: 60px;
+}
+
+.banner a {
+    color: white;
+    border: 2px solid red;
+    padding: 10px 25px;
+    margin-left: 15px;
+}
+
+.bg-frist::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+/* Work Section */
+.bg-2nd {
+    background-color: black;
+}
+
+.work-section {
+    width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.work-left {
+    float: left;
+    width: 50%;
+}
+
+.work-left h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.work-left h3 {
+    padding: 0 120px 0 0;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.work-left p {
+    font-size: 20px;
+    padding: 0 65px 0 0;
+    margin-bottom: 20px;
+    color: rgba(250, 250, 250, .4);
+}
+
+.work-left a {
+    display: inline-block;
+    background-color: #f13a12;
+    color: white;
+    padding: 16px 103px;
+    border-radius: 10px;
+}
+
+.work-right {
+    float: right;
+    width: 49%;
+    margin-top: 30px;
+    border-left: 2px solid rgba(250, 250, 250, .2);
+}
+
+.work-right h1 {
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 55px;
+}
+
+.work-right h4 {
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 55px;
+}
+
+.work-right p {
+    color: rgba(250, 250, 250, .4);
+    margin-left: 55px;
+    margin-top: -10px;
+    margin-bottom: 14px;
+}
+
+/* About Section */
+.bg-3rd {
+    background-color: #f9f9f9;
+}
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-contant {
+    float: left;
+    width: 40%;
+    padding: 0 17px;
+    box-sizing: border-box;
+}
+
+.about-contant h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-contant p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.about-items {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+
+.item {
+    display: inline-block;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, .3);
+    margin-right: 70px;
+    background-color: #fff;
+}
+
+.item-img {
+    display: inline-block;
+}
+
+.item-img img {
+    width: 215px;
+    height: auto;
+}
+
+.item-contant {
+    text-align: left;
+    padding: 25px 15px;
+}
+
+.item-contant h1 {
+    display: inline-block;
+}
+
+.item-contant h4 {
+    display: inline-block;
+    padding: 0 30px 0 0;
+    line-height: 36px;
+}
+
+.item-contant span {
+    margin-left: 27px;
+}
+
+.item-contant span.face {
+    margin-left: 50px;
+}
+
+/* traning-section */
+.traning-section {
+    padding: 50px 0;
+}
+
+.traning-title {
+    text-align: center;
+}
+
+.traning-title h3 {
+    color: rgba(0, 0, 0, .4);
+}
+
+.traning-title h1 {}
+
+.traning-items {}
+
+.traning-itam {
+    float: left;
+    margin-left: 55px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    width: 28%;
+}
+
+.traning-itam-img {}
+
+.traning-itam-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.traning-itam-contant {
+    padding: 20px 25px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.traning-itam-contant h1 {}
+
+.traning-itam-contant span {
+    display: block;
+    background: #f13a12;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.traning-itam-contant h5 {
+    display: inline-block;
+    color: rgba(0, 0, 0, .5);
+}
+
+.traning-itam-contant p {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+/* Contact sectiion */
+.bg-contact {
+    background-color: #ddd;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-form {
+    float: left;
+    width: 43%;
+    margin-left: 70px;
+}
+
+.contact-form h1 {
+    margin-bottom: 35px;
+    font-size: 45px;
+}
+
+.contact-form form {}
+
+form input {
+    width: 80%;
+    height: 65px;
+    font-size: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px; 
+}
+
+form input.btn {
+    width: 84%;
+    height: 40px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+form textarea {
+    width: 80%;
+    height: 240px;
+    padding: 0 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.contact-map {
+    float: right;
+    width: 43%;
+    margin-right: 77px;
+}
+
+.contact-map h1 {
+    margin-bottom: 32px;
+    font-size: 45px;
+}
+
+.contact-map p {
+    font-size: 23px;
+    padding: 0 222px 0 0;
+    margin-bottom: 44px;
+}
+
+.contact-map p span {
+    font-size: 32px;
+    color: red;
+}
+
+hr {
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, .4);
+}
+
+/* Time Table Section */
+.bg-timetable {
+    background-color: black;
+}
+
+.timetable-section {
+    padding: 50px 0;
+}
+
+.timetable-title {
+    text-align: center;
+}
+
+.timetable-title h4 {
+    font-size: 25px;
+    color: white;
+}
+
+.timetable-title h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.timetable {
+    text-align: center;
+}
+
+.timetable table {
+    color: white;
+    margin-left: 55px;
+}
+
+.timetable table tr {}
+
+.timetable table tr th {
+    border: 1px solid #ddd;
+    padding: 20px 65px;
+    background-color: #f13a12;
+}
+
+.timetable table tr th i {
+    font-size: 20px;
+}  
+
+.timetable table tr td {
+    border: 1px solid #ddd;
+    padding: 15px 25px;
+}
+
+.timetable table tr td b {
+    font-size: 20px;
+}
+
+.timetable table tr td p {
+    color: rgba(250, 250, 250, .5);
+}
+.tbcolor {
+    background-color: #f13a12;
+}
+/*aqui embaixo é o botão*//*o display grid em body que causa as bordas nas laterais*/
+@import "https://unpkg.com/open-props";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gradient-1);
+  place-items: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-6);
+  font-size:x-large;
+  color: var(--gray-8);
+  background: var(--gray-0);
+  border: 0;
+  padding: var(--size-4) var(--size-8);
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  position:absolute;
+}
+
+button:hover {
+  --y: -10;
+  --scale: 1.1;
+  --border-scale: 1;
+}
+
+button:active {
+  --y: 5%;
+  --scale: 0.9;
+  --border-scale: 0.9, 0.8;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--size-3) * -1);
+  border: var(--size-2) solid var(--gray-0);
+  transform: scale(var(--border-scale, 0));
+  transition: transform 0.125s;
+  
+  --angle-one: 105deg;
+  --angle-two: 290deg;
+  --spread-one: 30deg;
+  --spread-two: 40deg;
+  --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+  --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+  --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+  --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+  
+  mask: conic-gradient(
+    transparent 0 var(--start-one),
+    white var(--start-one) var(--end-one),
+    transparent var(--end-one) var(--start-two),
+    white var(--start-two) var(--end-two),
+    transparent var(--end-two)
+  );
+  
+  z-index: -1;
+}
+/*aqui embaixo é tabela*/
+table{
+    padding-top: 20px;
+}
+.p{
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+    padding: 0 65px 0 0;
+}
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-website bg-frist">
+        <div class="fixed-width">
+            <div class="header-section clearfix">
+                <div class="header-left">
+                    <h1><a href="Dia do Imigrante.html" style="color:white;">NoticiasSite.com</a></h1>
+                </div>
+                <div class="header-icon">
+                    <ul>
+                        <li align="center"><a href="https://www.facebook.com/mariaclaraguerreira.viana/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/mariaclmviana/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 align="center" style="color:#f9f9f9; font-size: 41px;">Sobre Nós</h1>
+                </div>
+            </div>       
+        </div>
+    </div>
+<!-- preto -->
+    <div class="full-website bg-2nd">
+        <div class="fixed-width">
+            <div class="work-section clearfix">
+                <div class="work-left">
+                    <img src=""><!--minha foto-->
+                    <p align="justify">Sou Maria Clara, estudante de Engenharia de Software, de 19 anos e estou no primeiro semestre. Estudo na Universidade Católica de Brasília - DF e
+                    este estudo faz parte de um projeto da matéria de Desenvolvimento Front-End.</p> 
+                </div>
+                <div class="work-right" align="justify">
+                    <p>Após muita pesquisa, criei este site para depositar assuntos que têm grande importância e que necessitam de discussão.<br>Caso haja qualquer dúvida, me contate 
+                    pelas redes sociais ou pelo formulário abaixo!</p><br>
+                    <ul>
+                        <li align="center"><a href="https://www.facebook.com/mariaclaraguerreira.viana/"><i class="fab fa-facebook"></i></a></li>
+                        <li align="center"><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                        <li align="center"><a href="https://www.instagram.com/mariaclmviana/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>    
+                </div>
+            </div>
+        </div>
+    </div>
+<!--contato-->            
+    <div class="full-website bg-contact">
+        <div class="fixed-width">
+            <div class="contact-section clearfix">
+                <div class="contact-form">
+                    <h1 style="color:#232323">Contate-nos</h1>
+                    <form action="#">
+                        <input type="text" placeholder="Name"> <br> <br>
+                        <input type="email" placeholder="Email"> <br> <br>
+                        <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea> <br> <br>
+                        <input type="submit" class="btn" value="Send Message">
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <h1 style="color:#232323">Onde pode me achar</h1>
+                    <p style="color:#232323"><span><i class="fas fa-map-marker-alt"></i></span> Brasília - Distrito Federal, Brasil</p>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491462.2319115244!2d-48.12679302624108!3d-15.774996593921331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18e45b91a3%3A0x24e8d3620bd85d7f!2sBras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1687482319654!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="Política de Privacidade definitivo.html" style="color:black">Política de Privacidade</a>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="Termos de Uso definitivo.html" style="color:black">Termos de Uso</a><p align="right" style="font-size: small;">©2023.Todos os Direitos Reservados</p>
+            </div>
+        </div>
+    </div>
+    </body>
+   </html>
+</body>
+</html>

@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Dia do Imigrante</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.full-website {
+    max-width: 100%;
+}
+
+.fixed-width {
+    width: 1270px;
+    margin: auto;
+}
+
+.bg-frist {
+    background: url(https://www.smnadv.com.br/wp-content/uploads/2019/09/Os-direitos-de-imigrantes-em-territo%CC%81rio-nacional-ADVSN.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 20px 0 220px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header-section {}
+
+.header-left {
+    float: left;
+    width: 20%;
+    transition: .8s;
+
+}
+
+.header-left h1 {
+    color: white;
+    font-size: 40px;
+    float: ;
+}
+
+.header-manu {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+.header-manu ul {}
+
+.header-manu ul li {
+    display: inline-block;
+}
+
+.header-manu ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 15px;
+    transition: .5s;
+}
+
+.header-manu ul li a:hover {
+    color: red;
+}
+
+.header-icon {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.header-icon ul {}
+
+.header-icon ul li {
+    display: inline-block;
+}
+
+.header-icon ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.header-icon ul li a i {}
+
+.banner {
+    margin-top: 320px;
+    text-align: center;
+    color: white;
+    width: 530px;
+    margin: 320px auto 0 auto;
+}
+
+.banner h3 {
+    font-size: 22px;
+}
+
+.banner p {
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 41px;
+    margin: 25px 0;
+    line-height: 60px;
+}
+
+.banner a {
+    color: white;
+    border: 2px solid red;
+    padding: 10px 25px;
+    margin-left: 15px;
+}
+
+.bg-frist::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+/* Work Section */
+.bg-2nd {
+    background-color: black;
+}
+
+.work-section {
+    width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+}
+.work-left {
+    float: left;
+    width: 50%;
+}
+
+.work-left h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.work-left h2{ /*PARA OS LINKS*/
+    color:#f9f9f9;
+}
+
+.work-left h3 {
+    padding: 0 120px 0 0;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.work-left p {
+    font-size: 20px;
+    padding: 0 65px 0 0;
+    margin-bottom: 20px;
+    color: rgba(250, 250, 250, .4);
+}
+
+.work-left a {
+    display: inline-block;
+    background-color: #f13a12;
+    color: white;
+    padding: 16px 103px;
+    border-radius: 10px;
+}
+
+.work-right {
+    float: right;
+    width: 49%;
+    margin-top: 30px;
+    border-left: 2px solid rgba(250, 250, 250, .2);
+}
+
+.work-right h1 {
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 55px;
+}
+
+.work-right h4 {
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 55px;
+}
+/*aqui tá o padrão de cor no tema preto*/
+.work-right p {
+    color: rgba(250, 250, 250, 0.768);
+    margin-left: 55px;
+    margin-top: -10px;
+    margin-bottom: 14px;
+}
+
+
+/* About Section */
+.bg-3rd {
+    background-color: #f9f9f9;
+}
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-contant {
+    float: left;
+    width: 33%;
+    padding: 0 17px;
+    box-sizing: border-box;
+}
+
+.about-contant h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-contant p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.about-items {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+.item {
+    display: inline-block;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, .3);
+    margin-right: 70px;
+    background-color: #fff;
+}
+
+.item-img {
+    display: inline-block;
+}
+
+.item-img img {
+    width: 215px;
+    height: auto;
+}
+
+.item-contant {
+    text-align: left;
+    padding: 25px 15px;
+}
+
+.item-contant h1 {
+    display: inline-block;
+}
+
+.item-contant h4 {
+    display: inline-block;
+    padding: 0 30px 0 0;
+    line-height: 36px;
+}
+
+.item-contant span {
+    margin-left: 27px;
+}
+
+.item-contant span.face {
+    margin-left: 50px;
+}
+
+/* traning-section */
+.traning-section {
+    padding: 50px 0;
+}
+
+.traning-title {
+    text-align: center;
+}
+
+.traning-title h3 {
+    color: rgba(0, 0, 0, .4);
+}
+
+.traning-title h1 {}
+
+.traning-items {}
+
+.traning-itam {
+    float: left;
+    margin-left: 55px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    width: 28%;
+}
+
+.traning-itam-img {}
+
+.traning-itam-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.traning-itam-contant {
+    padding: 20px 25px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.traning-itam-contant h1 {}
+
+.traning-itam-contant span {
+    display: block;
+    background: #f13a12;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.traning-itam-contant h5 {
+    display: inline-block;
+    color: rgba(0, 0, 0, .5);
+}
+
+.traning-itam-contant p {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+/* Contact sectiion */
+.bg-contact {
+    background-color: #ddd;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-form {
+    float: left;
+    width: 43%;
+    margin-left: 70px;
+}
+
+.contact-form h1 {
+    margin-bottom: 35px;
+    font-size: 45px;
+}
+
+.contact-form form {}
+
+form input {
+    width: 80%;
+    height: 65px;
+    font-size: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px; 
+}
+
+form input.btn {
+    width: 84%;
+    height: 40px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+form textarea {
+    width: 80%;
+    height: 240px;
+    padding: 0 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.contact-map {
+    float: right;
+    width: 43%;
+    margin-right: 77px;
+}
+
+.contact-map h1 {
+    margin-bottom: 32px;
+    font-size: 45px;
+}
+
+.contact-map p {
+    font-size: 23px;
+    padding: 0 222px 0 0;
+    margin-bottom: 44px;
+}
+
+.contact-map p span {
+    font-size: 32px;
+    color: red;
+}
+
+hr {
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, .4);
+}
+b{
+    color:orangered;
+}
+strong{
+    color:royalblue;
+}
+/*aqui embaixo é o botão*//*o display grid em body que causa as bordas nas laterais*/
+@import "https://unpkg.com/open-props";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gradient-1);
+  place-items: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-6);
+  font-size:x-large;
+  color: var(--gray-8);
+  background: var(--gray-0);
+  border: 0;
+  padding: var(--size-4) var(--size-8);
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  position:absolute;
+}
+
+button:hover {
+  --y: -10;
+  --scale: 1.1;
+  --border-scale: 1;
+}
+
+button:active {
+  --y: 5%;
+  --scale: 0.9;
+  --border-scale: 0.9, 0.8;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--size-3) * -1);
+  border: var(--size-2) solid var(--gray-0);
+  transform: scale(var(--border-scale, 0));
+  transition: transform 0.125s;
+  
+  --angle-one: 105deg;
+  --angle-two: 290deg;
+  --spread-one: 30deg;
+  --spread-two: 40deg;
+  --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+  --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+  --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+  --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+  
+  mask: conic-gradient(
+    transparent 0 var(--start-one),
+    white var(--start-one) var(--end-one),
+    transparent var(--end-one) var(--start-two),
+    white var(--start-two) var(--end-two),
+    transparent var(--end-two)
+  );
+  
+  z-index: -1;
+}
+/*aqui embaixo é tabela*/
+table{
+    padding-top: 20px;
+}
+.p{
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+    padding: 0 65px 0 0;
+}
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+/*AQUI EMBAIXO É CSS DO MENU*/
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 100px;
+  left: 0px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: 0px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:#f9f9f9;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-website bg-frist">
+        <div class="fixed-width">
+            <div class="header-section clearfix">
+                <div class="header-left">
+                    <h1><a href="Dia do Imigrante.html" style="color:white;">NoticiasSite.com</a></h1>
+                </div>
+                <div class="header-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/mariaclaraguerreira.viana/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/mariaclmviana/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div><!--AQUI EMBAIXO É DO MENU-->
+                <nav role="navigation">
+                    <div id="menuToggle">
+                      <!--
+                      A fake / hidden checkbox is used as click reciever,
+                      so you can use the :checked selector on it.
+                      -->
+                      <input type="checkbox" />
+                      
+                      <!--
+                      Some spans to act as a hamburger.
+                      
+                      They are acting like a real hamburger,
+                      not that McDonalds stuff.
+                      -->
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                      <!--
+                      Too bad the menu has to be inside of the button
+                      but hey, it's pure CSS magic.
+                      -->
+                      <ul id="menu">
+                        <a href="#Quem"><li>Quem é Imigrante</li></a>
+                        <a href="#Diferença"><li>Imigração x Emigração x Migração</li></a>
+                        <a href="#Refugiado"><li>Imigração x Refúgio</li></a>
+                        <a href="#Causas"><li>Causas da Imigração</li></a>
+                        <a href="#Problema"><li>Problemas da Imigração</li></a>
+                        <a href="#Brasil"><li>A imigração no Brasil</li></a>
+                        <a href="#Museu"><li>Museu da Imigração</li></a>
+                        <a href="#Tipos"><li>Tipos de Migração</li></a>
+                        <a href="#Imigrante"><li>Dia do Imigrante</li></a>
+                      </ul>
+                    </div>
+                  </nav><!--ATÉ AQUI-->
+                <div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1 align="center" style="color:#f9f9f9; font-size: 41px;">Dia do Imigrante</h1>
+                </div>
+            </div>       
+        </div>
+    </div>
+<!-- preto -->
+    <div class="full-website bg-2nd">
+        <div class="fixed-width">
+            <div class="work-section clearfix">
+                <div class="work-left">
+                    <h1 align="center" id="Quem">Quem é imigrante?</h1>
+                </div>
+                <div class="work-right" align="justify">
+                    <p>Aquele que <b>imigra</b>, aquele que tem como objetivo residir ou trabalhar em um determinado país.</p><br><p><strong>Exemplo:</strong> Pessoas de nacionalidade haitiana que vêm ao Brasil à procura de moradia e emprego.</p>    
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- branco-->
+<div class="full-website bg-3rd">
+    <div class="fixed-width">
+        <div class="about-section clearfix">
+                <table border="0" width="100%" id="Diferença">
+                    <tr>
+                        <td align="center" width="33%" id="Diferença" style="color:#232323"><h1>Imigração</h1></td>
+                        <td align="center" width="33%" id="Diferença" style="color:#232323"><h1>Emigração</h1></td>
+                        <td align="center" width="33%" id="Diferença" style="color:#232323"><h1>Migração</h1></td>
+                    </tr>
+                </table>
+                <table border="0" width="100%">  
+                    <tr>
+                        <td class="p" width="33%" align="justify"><p>É o ato de <b>entrada</b> de uma pessoa do exterior em um outro país que <b>não seja</b> sua nacionalidade do ponto de vista da nação acolhedora.<br><br>
+                        <strong>Exemplo: alguém dos Estados Unidos vai para o Brasil por um determinado tempo por algum motivo. Nos EUA é emigrante, no Brasil é imigrante.</strong></p></td>
+                        <td class="p" width="33%" align="justify">Significa <b>deixar</b> o local de origem (a pátria) com intenção de se estabelecer em um <b>país estrangeiro.</b><br><br><strong>
+                        Exemplo: Sair de Portugal e ir ao Brasil para morar.</strong></td>
+                        <td class="p" width="33%" align="justify">É <b>mover, migrar</b> de um local a outro.<br><br>
+                        <button align="justify"><a href="História da Migração.html" style="color:black">Acesse: História da Migração</a></button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!--preto-->    
+    <div class="full-website bg-2nd">
+        <div class="fixed-width">
+            <div class="work-section clearfix">
+                <div class="work-left">
+                    <h1 align="center" id="Refugiado">Imigração x Refúgio</h1>
+                </div>
+                <div class="work-right" align="justify">
+                    <p>É muito fácil confundir imigrantes com refugiados, apesar de que <b>o refúgio seja um tipo de imigração.</b> O <b>Imigrante</b> é aquele indivíduo que sai
+                    de seu país de origem com o intuito de conseguir<b> melhores condições de vida.</b> No Brasil o imigrante tem seus direitos pautados na Lei Brasileira<b> N°13.445 de 2017, <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13445.htm#:~:text=L13445&text=LEI%20N%C2%BA%2013.445%2C%20DE%2024%20DE%20MAIO%20DE%202017.&text=Institui%20a%20Lei%20de%20Migra%C3%A7%C3%A3o.&text=Art.%201%C2%BA%20Esta%20Lei%20disp%C3%B5e,pol%C3%ADticas%20p%C3%BAblicas%20para%20o%20emigrante." style="color:gold">acesse a lei aqui,</a>
+                    </b> que diz: <b>"Art. 1º Esta Lei dispõe sobre os direitos e os deveres do migrante e do visitante, regula a sua entrada e estada no País e estabelece princípios e diretrizes 
+                    para as políticas públicas para o emigrante."</b> E para os refugiados que são residentes de um país que se encontra em <b>situação de guerra ou perseguição ou que se encaixe</b>
+                    em uma das três características abaixo, são protegidos pela Lei Brasileira <b>N°9.474 de 1997, <a href="http://www.planalto.gov.br/ccivil_03/leis/l9474.htm" style="color:gold"> acesse a lei aqui,</a></b> que diz:
+                    <b>"Art. 1º Será reconhecido como refugiado todo indivíduo que:</b><br><br>I - devido a fundados temores de perseguição por motivos de raça, religião, nacionalidade, grupo social ou opiniões políticas encontre-se fora de seu país de nacionalidade e não possa ou não queira acolher-se à proteção de tal país;<br><br>
+                    II - não tendo nacionalidade e estando fora do país onde antes teve sua residência habitual, não possa ou não queira regressar a ele, em função das circunstâncias descritas no inciso anterior;<br><br>
+                    III - devido a grave e generalizada violação de direitos humanos, é obrigado a deixar seu país de nacionalidade para buscar refúgio em outro país."</p>   
+                </div>
+            </div>
+
+        </div>
+    </div>
+<!--branco -->
+    <div class="full-website bg-3rd">
+        <div class="fixed-width">
+            <div class="about-section clearfix">
+                <div class="about-contant" width="33%" align="justify">
+                    <h1 style="color:#232323" id="Causas">Causas da Imigração</h1>
+                    <p>São diversos os <b>motivos</b> para o processo de imigração se consolidar. Entre os <b>principais</b> estão:</p><br>
+                    <p><b style="color:rgb(69, 173, 16)">Econômicos:</b> Decorre em razão do indivíduo buscar <b>melhores condições de vida,</b> na maior parte dos casos, com o
+                    intuito de uma colocação <b>profissional</b> superior, além de <b>crises</b> locais políticas e desastres naturais.</p>
+            <div class="about-section clearfix">
+                <div class="about-contant">
+                    <button><a href="Causas da Migração.html" style="color:black">Acesse: Outras Causas</a></button>
+                </div>
+            </div>
+                </div><br><br><br><br><br><br>
+                <div class="about-contant" width="33%" align="justify">
+                    <p><b style="color:rgb(69, 173, 16)">Políticos:</b> Normalmente são <b>crises</b> políticas que precedem crises econômicas e dessa forma ocasionam a <b>fuga de cidadãos</b>
+                    daquele país como forma de <b>garantir segurança e liberdade</b> como em <strong>regimes ditatoriais.</strong></p>
+                </div>
+                <div class="about-contant" width="33%" align="justify">
+                    <p><b style="color:rgb(69, 173, 16)">Trabalho:</b> Em razão do aumento do desemprego, da inflação e com isso <b>ausência de condições para desenvolvimento próprio</b>
+                    muitas pessoas preferem a mudança para um país que ofereça as <b>oportunidades</b> desejadas por elas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- preto -->
+    <div class="full-website bg-2nd">
+        <div class="fixed-width">
+            <div class="work-section clearfix">
+                <div class="work-left">
+                    <h1 align="center" id="Problema">Problemas da Imigração</h1>
+                </div>
+                <div class="work-right" align="justify">
+                    <p>Com <b>impulso e desespero</b> promovido por diversos propósitos, a ocorrência de imigrantes que tentam entrar e residir em outra terra, processo denominado <b>Imigração Ilegal,</b>
+                    é frequente na realidade Europeia e Norte Americana por exemplo. A imigração ilegal acontece quando os <b>requisitos</b> de entrada e permanência <b>não são atendidos,</b> de acordo com 
+                    o <b>Ministério de Relações Exteriores.</b> Além de que, na grande maioria dos casos, os imigrantes não são <b>bem recebidos</b> e podem passar por <b>situações constrangedoras e de segregação.</b>
+                    Pode ocorrer em uma dessas quatro categorias:<br><br><b style="color:rgb(69, 173, 16)">Imigrantes Ilegais:</b> Indivíduos que entram em uma terra sem a apresentação de <b>documentos legais,</b>
+                    como o "visto", por <b>meios ilegais</b> que fogem de procedimentos padronizados.<br><br><b style="color:rgb(69, 173, 16)">Imigrantes Indocumentados:</b> Quando o trabalhador não tem direito de
+                    exercer sua profissão, pois está em <b>desacordo</b> com as condições do <b>visto.</b><br><br><b style="color:rgb(69, 173, 16)">Imigrantes "Irregulares":</b> Pessoas que entraram de forma legal, 
+                    mas continuam no país em <b>desacordo com as condições do visto</b> ou com <b>o prazo de permanência</b> vencido.<br><br><b style="color:rgb(69, 173, 16)">Imigrantes Não Autorizados:</b> Aqueles 
+                    que permanecem mesmo com a <b>negação de estadia</b> por procedimentos jurídicos.</p><br>
+                    <div class="about-contant" align="left">
+                        <button><a href="Problemas da Migração.html" style="color:rgb(255, 255, 255)">Acesse: Outros problemas relacionados à Migração</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>            
+<!--branco-->    
+    <div class="full-website bg-3rd">
+        <div class="fixed-width">
+            <div class="about-section clearfix">
+                <div class="about-contant">
+                </div>    
+            <div class="about-section clear-fix">
+                <div class="about-contant clear-fix" align="justify">
+                    <h1 align="justify" style="color:#232323" id="Brasil">A Imigração no Brasil</h1>
+                    <p>O Brasil é um dos países que apresenta mais <b>dificuldades</b> para o ingresso de imigrantes e dessa forma a <b>ilegalidade</b> predomina. A <b>Imigração Ilegal</b> é
+                    responsável pelo crescimento de uma <b>rede criminosa</b> no país em que contrabandistas auxiliam os indivíduos nas práticas de <b>falsificação de documentos</b> e até no 
+                    contrabando de produtos ilícitos.</p><br>
+                    <div class="about-contant" align="left">
+                        <button><a href="A Imigração no Brasil.html" style="color:rgb(0, 0, 0)">Acesse: Outros motivos para o desinteresse de estrangeiros no Brasil</a></button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>     
+<!--preto-->
+    <div class="full-website bg-2nd">
+        <div class="fixed-width">
+            <div class="work-section clearfix">
+                <div class="work-left" id="Museu">
+                    <h1 align="center">Museu da Imigração</h1>
+                </div>
+                <div class="work-right" align="justify">
+                    <p>Foi criado em 25 de Junho de 1993 pelo <b>governador do Estado de São Paulo, Luiz Antônio Fleury Filho,</b> com o intuito de disponibilizar informações sobre as pessoas migrantes,
+                    suas trajetórias, culturas, promover a reflexão sobre a presença de imigrantes no Brasil e a discussão sobre a <b>importância</b> da vinda de tais indivíduos.</p>
+                    <p>O Museu possui local físico na <b>Capital do Estado de São Paulo</b> e está disponível para visitas durante toda a semana com excessão de segunda-feira das 09:00 às 18:00 e aos domingos
+                    das 10:00 às 18:00. Realiza também eventos com temas que abordam o estrangeiro como o festival "VIVA!Japão". Além disso, possui um <b>acervo digital</b> disponível no site oficial. <a href="https://museudaimigracao.org.br/" style="color:gold">Acesse aqui</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>    
+<!--branco--> 
+    <div class="full-website bg-3rd">
+        <div class="fixed-width">
+            <div class="about-section clearfix">
+                <div class="about-contant" align="justify" id="Tipos">
+                    <h1 style="color:#232323">Tipos de Migração</h1>
+                </div>
+            <div class="about-section clearfix">
+                <div class="about-contant" width="33%" align="justify">
+                    <p>Há várias formas de <b>qualificar o movimento</b> de uma pessoa ou de um grupo de pessoas, são elas:</p><br>
+                    <p><b style="color:rgb(69, 173, 16)">Migração Externa/ Internacional:</b> Imigração por si mesma. A ida de uma pessoa para <b>outro país.</b><br>
+                    <b style="color:rgb(69, 173, 16)">Migração Pendular/ Diária:</b> Ocorre quando o indivíduo se desloca de um local a outro <b>com um propósito e retorna</b>
+                    ao lar no mesmo dia.</p>
+            <div class="about-section clearfix">
+                <div class="about-contant">
+                    <button><a href="Tipos de Migração.html" style="color:black">Acesse: Outros tipos de migração</a></button>
+                </div>
+            </div>
+                </div>
+                <div class="about-contant" width="33%" align="justify">
+                    <p><b style="color:rgb(69, 173, 16)">Migração Espontânea/ Voluntária:</b> Acontece pelo <b>interesse</b> do ser que se muda.</p><br>
+                    <p><b style="color:rgb(69, 173, 16)">Êxodo Rural:</b> Ida de pessoas do <b>campo(zona rural)</b> para <b>regiões urbanas.</b></p><br>
+                    <p><b style="color:rgb(69, 173, 16)">Êxodo Urbano:</b> É a ação <b>contrária</b> ao Êxodo Rural. Cidadãos do <b>campo</b> se deslocam para as <b>cidades.</b></p>
+                </div>
+                <div class="about-contant" width="33%" align="justify">
+                    <p><b style="color:rgb(69, 173, 16)">Diáspora:</b> É a <b>saída</b> de uma população inteira de forma <b>involuntária</b> ou <b>optativa.</b></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--preto-->
+<div class="full-website bg-2nd">
+    <div class="fixed-width">
+        <div class="work-section clearfix">
+            <div class="work-left" id="Imigrante">
+                <h1 align="center">Dia do Imigrante</h1>
+            </div>
+            <div class="work-right" align="justify">
+                <p>No Brasil, foi através do Decreto n°30.128, 14 de Novembro de 1957 determinado pela Assembleia Legislativa do Estado de São Paulo que o <b>Dia do Imigrante</b>
+                surgiu definido no dia <b>25 de Junho.</b> Tem como <b>objetivo</b> prestigiar aqueles que saíram de seus países em busca de melhores condições de vida e demonstrar a 
+                <b>importância</b> e a <b>influência</b> da presença dos mesmos para o <b>desenvolvimento econômico, social e cultural</b> das nações. Por esse motivo, o <b>Museu da Imigração</b>
+                (assunto presente nesta matéria) é muito significante para o reconhecimento desta data.</p>
+            </div>
+        </div>
+    </div>
+</div>  
+<!--LINKS-->
+<div class="full-website bg-2nd">
+    <div class="fixed-width">
+        <div class="work-section clearfix">
+            <div class="work-left">
+                <h2>Sites Utilizados Para Essa Matéria:</h2>
+            </div>
+            <div class="work-right">
+                    <p><a href="https://www.maisbolsas.com.br/educacao/dicas/qual-a-diferenca-entre-refugiados-e-imigrantes" style="color:#f9f9f9">Qual a diferença entre refugiados e imigrantes</p>
+                    <p><a href="https://www.educamaisbrasil.com.br/educacao/noticias/brasil-tem-1-da-populacao-fluente-em-ingles" style="color:#f9f9f9">Brasil tem 1% da população fluente em inglês</a></p>
+                    <p><a href="https://ccbc.org.br/publicacoes/noticias-ccbc/francofonia-celebracoes-no-brasil-do-mes-mundial-do-idioma-frances/#:~:text=No%20Brasil%2C%20existem%20650%20mil,estimativas%20do%20governo%20do%20Qu%C3%A9bec" style="color:#f9f9f9">Francofonia: celebrações no Brasil do mês mundial do idioma francês</a></p>
+                    <p><a href="https://agenciabrasil.ebc.com.br/geral/noticia/2018-03/burocracia-dificulta-insercao-de-imigrantes-no-mercado-de-trabalho-no-brasil" style="color:#f9f9f9">Burocracia dificulta inserção de imigrantes no mercado de trabalho no Brasil</a></p>
+                    <p><a href="https://brasilescola.uol.com.br/sociologia/imigracao-ilegal.htm" style="color:#f9f9f9">Imigração ilegal</a></p>
+                    <p><a href="https://www.jusbrasil.com.br/artigos/a-crise-dos-imigrantes-cenarios-na-europa-e-no-brasil/235814132#:~:text=A%20imigra%C3%A7%C3%A3o%20%C3%A9%2C%20na%20maioria,ou%20s%C3%A3o%20deportados%20ao%20chegar" style="color:#f9f9f9">A crise dos imigrantes: cenários na Europa e no Brasil</a></p>
+                    <p><a href="https://www.politize.com.br/imigracao-ilegal-causas-e-consequencias/" style="color:#f9f9f9">Imigração Ilegal: causas e consequências</a></p>
+                    <p><a href="https://escolakids.uol.com.br/historia/evolucao-cidade-medieval.htm#:~:text=Ocorreu%20uma%20grande%20migra%C3%A7%C3%A3o%20de,novas%20terras%20para%20estabelecer%2Dse" style="color:#f9f9f9">EVOLUÇÃO DA CIDADE MEDIEVAL</a></p>
+                    <p><a href="https://pt.wikipedia.org/wiki/Imigra%C3%A7%C3%A3o#Hist%C3%B3ria" style="color:#f9f9f9">Imigração</a></p>
+                    <p><a href="https://pt.wikipedia.org/wiki/Museu_da_Imigra%C3%A7%C3%A3o_do_Estado_de_S%C3%A3o_Paulo" style="color:#f9f9f9">Museu da Imigração do Estado de São Paulo</a></p>
+                    <p><a href="https://museudaimigracao.org.br/" style="color:#f9f9f9">Museu da Imigração</a></p>
+                    <p><a href="https://brasilescola.uol.com.br/brasil/imigracao-no-brasil.htm#Causas+da+imigra%C3%A7%C3%A3o+no+Brasil" style="color:#f9f9f9">Imigração no Brasil</a></p>
+                    <p><a href="https://www.educamaisbrasil.com.br/educacao/dicas/entenda-qual-a-diferenca-entre-refugiados-e-imigrantes" style="color:#f9f9f9">Entenda qual a diferença entre refugiados e imigrantes</a></p>
+                    <p><a href="https://brasilescola.uol.com.br/geografia/tipos-migracao.htm#O+que+%C3%A9+migra%C3%A7%C3%A3o%3F" style="color:#f9f9f9">Migração</a></p>
+                    <p><a href="https://www.diferenca.com/migracao-imigracao-e-emigracao/" style="color:#f9f9f9">Migração, Imigração e Emigração</a></p>    
+                    <p><a href="https://missaonspaz.org/blog/imigrante/" style="color:#f9f9f9">Imigrante: Aprenda o Que é e Veja Exemplos Marcantes no Brasil</a></p>
+                    <p><a href="https://www.significados.com.br/imigrante/" style="color:#f9f9f9">Imigrante</a></p>
+                    <p><a href="http://www.cmac.es.gov.br/noticia/ler/700/dia-do-imigrante#:~:text=O%20dia%2025%20de%20junho,partir%20de%2018%20de%20junho." style="color:#f9f9f9">Dia do Imigrante</a></p>
+                    <p><a href="https://www.calendarr.com/brasil/dia-do-imigrante/" style="color:#f9f9f9">Dia do Imigrante - CALENDARR</a></p>
+                    <p><a href="https://www.cashme.com.br/blog/dia-do-imigrante/" style="color:#f9f9f9">Dia do Imigrante - cashme</p>
+                    <p><a href="https://saopaulosecreto.com/no-dia-do-imigrante-museu-da-imigracao/" style="color:#f9f9f9">No Dia do Imigrante, entenda o importante papel desempenhado pelo Museu da Imigração</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--contato-->            
+    <div class="full-website bg-contact">
+        <div class="fixed-width">
+            <div class="contact-section clearfix">
+                <div class="contact-form">
+                    <h1 style="color:#232323">Contate-nos</h1>
+                    <form action="#">
+                        <input type="text" placeholder="Name"> <br> <br>
+                        <input type="email" placeholder="Email"> <br> <br>
+                        <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea> <br> <br>
+                        <input type="submit" class="btn" value="Send Message">
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <h1 style="color:#232323">Onde pode me achar</h1>
+                    <p style="color:#232323"><span><i class="fas fa-map-marker-alt"></i></span> Brasília - Distrito Federal, Brasil</p>
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491462.2319115244!2d-48.12679302624108!3d-15.774996593921331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18e45b91a3%3A0x24e8d3620bd85d7f!2sBras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1687482319654!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer">
+                <a href="Sobre.html" style="color:black">Sobre</a>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="Política de Privacidade definitivo.html" style="color:black">Política de Privacidade</a>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="Termos de Uso definitivo.html" style="color:black">Termos de Uso</a><p align="right" style="font-size: small;">©2023.Todos os Direitos Reservados</p>
+            </div>
+        </div>
+    </div>
+    </body>
+   </html>
+</body>
+</html>

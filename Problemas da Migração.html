@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas da Migração</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.full-website {
+    max-width: 100%;
+}
+
+.fixed-width {
+    width: 1270px;
+    margin: auto;
+}
+
+.bg-frist {
+    background: url(https://www.smnadv.com.br/wp-content/uploads/2019/09/Os-direitos-de-imigrantes-em-territo%CC%81rio-nacional-ADVSN.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 20px 0 220px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header-section {}
+
+.header-left {
+    float: left;
+    width: 20%;
+    transition: .8s;
+
+}
+
+.header-left h1 {
+    color: white;
+    font-size: 40px;
+    float: ;
+}
+
+.header-manu {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+.header-manu ul {}
+
+.header-manu ul li {
+    display: inline-block;
+}
+
+.header-manu ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 15px;
+    transition: .5s;
+}
+
+.header-manu ul li a:hover {
+    color: red;
+}
+
+.header-icon {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.header-icon ul {}
+
+.header-icon ul li {
+    display: inline-block;
+}
+
+.header-icon ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.header-icon ul li a i {}
+
+.banner {
+    margin-top: 320px;
+    text-align: center;
+    color: white;
+    width: 530px;
+    margin: 320px auto 0 auto;
+}
+
+.banner h3 {
+    font-size: 22px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.banner p {
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 41px;
+    margin: 25px 0;
+    line-height: 60px;
+}
+
+.banner a {
+    color: white;
+    border: 2px solid red;
+    padding: 10px 25px;
+    margin-left: 15px;
+}
+
+.bg-frist::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+/* Work Section */
+.bg-2nd {
+    background-color: black;
+}
+
+.work-section {
+    width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.work-left {
+    float: left;
+    width: 50%;
+}
+
+.work-left h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+.work-left h2{ /*PARA OS LINKS*/
+    color:#f9f9f9;
+}
+
+.work-left h3 {
+    padding: 0 120px 0 0;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.work-left p {
+    font-size: 20px;
+    padding: 0 65px 0 0;
+    margin-bottom: 20px;
+    color: rgba(250, 250, 250, .4);
+}
+
+.work-left a {
+    display: inline-block;
+    background-color: #f13a12;
+    color: white;
+    padding: 16px 103px;
+    border-radius: 10px;
+}
+
+.work-right {
+    float: right;
+    width: 49%;
+    margin-top: 30px;
+    border-left: 2px solid rgba(250, 250, 250, .2);
+}
+
+.work-right h1 {
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 55px;
+}
+
+.work-right h4 {
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 55px;
+}
+
+.work-right p {
+    color: rgba(250, 250, 250, .4);
+    margin-left: 55px;
+    margin-top: -10px;
+    margin-bottom: 14px;
+}
+
+/* About Section */
+.bg-3rd {
+    background-color: #f9f9f9;
+}
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-contant {
+    float: left;
+    width: 40%;
+    padding: 0 17px;
+    box-sizing: border-box;
+}
+
+.about-contant h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-contant p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.about-items {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+
+.item {
+    display: inline-block;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, .3);
+    margin-right: 70px;
+    background-color: #fff;
+}
+
+.item-img {
+    display: inline-block;
+}
+
+.item-img img {
+    width: 215px;
+    height: auto;
+}
+
+.item-contant {
+    text-align: left;
+    padding: 25px 15px;
+}
+
+.item-contant h1 {
+    display: inline-block;
+}
+
+.item-contant h4 {
+    display: inline-block;
+    padding: 0 30px 0 0;
+    line-height: 36px;
+}
+
+.item-contant span {
+    margin-left: 27px;
+}
+
+.item-contant span.face {
+    margin-left: 50px;
+}
+
+/* traning-section */
+.traning-section {
+    padding: 50px 0;
+}
+
+.traning-title {
+    text-align: center;
+}
+
+.traning-title h3 {
+    color: rgba(0, 0, 0, .4);
+}
+
+.traning-title h1 {}
+
+.traning-items {}
+
+.traning-itam {
+    float: left;
+    margin-left: 55px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    width: 28%;
+}
+
+.traning-itam-img {}
+
+.traning-itam-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.traning-itam-contant {
+    padding: 20px 25px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.traning-itam-contant h1 {}
+
+.traning-itam-contant span {
+    display: block;
+    background: #f13a12;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.traning-itam-contant h5 {
+    display: inline-block;
+    color: rgba(0, 0, 0, .5);
+}
+
+.traning-itam-contant p {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+/* Contact sectiion */
+.bg-contact {
+    background-color: #ddd;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-form {
+    float: left;
+    width: 43%;
+    margin-left: 70px;
+}
+
+.contact-form h1 {
+    margin-bottom: 35px;
+    font-size: 45px;
+}
+
+.contact-form form {}
+
+form input {
+    width: 80%;
+    height: 65px;
+    font-size: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px; 
+}
+
+form input.btn {
+    width: 84%;
+    height: 40px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+form textarea {
+    width: 80%;
+    height: 240px;
+    padding: 0 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.contact-map {
+    float: right;
+    width: 43%;
+    margin-right: 77px;
+}
+
+.contact-map h1 {
+    margin-bottom: 32px;
+    font-size: 45px;
+}
+
+.contact-map p {
+    font-size: 23px;
+    padding: 0 222px 0 0;
+    margin-bottom: 44px;
+}
+
+.contact-map p span {
+    font-size: 32px;
+    color: red;
+}
+
+hr {
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, .4);
+}
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+b{
+    color:orangered;
+}
+/*AQUI EMBAIXO É CSS MENU*/
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  /* make it look decent enough */
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 100px;
+  left: 0px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #ffffff;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: 0px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background:#f9f9f9;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #ffffff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+    </style>
+</head>
+<body>
+    <div class="full-website bg-frist">
+        <div class="fixed-width">
+            <div class="header-section clearfix">
+                <div class="header-left">
+                    <h1><a href="Dia do Imigrante.html" style="color:white;">NoticiasSite.com</a></h1>
+                </div>
+                <div class="header-icon">
+                    <ul>
+                        <li><a href="https://www.facebook.com/mariaclaraguerreira.viana/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/mariaclmviana/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div><!--AQUI EMBAIXO É MENU-->
+                <nav role="navigation">
+                    <div id="menuToggle">
+                      <!--
+                      A fake / hidden checkbox is used as click reciever,
+                      so you can use the :checked selector on it.
+                      -->
+                      <input type="checkbox" />
+                      
+                      <!--
+                      Some spans to act as a hamburger.
+                      
+                      They are acting like a real hamburger,
+                      not that McDonalds stuff.
+                      -->
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                      <!--
+                      Too bad the menu has to be inside of the button
+                      but hey, it's pure CSS magic.
+                      -->
+                      <ul id="menu">
+                        <a href="#Por que"><li>Por que a Imigração Ocorre?</li></a>
+                        <a href="#Perigos"><li>Os Perigos da Imigração</li></a>
+                      </ul>
+                    </div>
+                  </nav>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h1 align="center" style="color:#f9f9f9; font-size: 41px;">Problemas da Migração</h1>
+            </div>       
+        </div>
+    </div>
+    <!--Por que isso acontece?-->
+        <div class="full-website bg-2nd">
+            <div class="fixed-width">
+                <div class="work-section clearfix">
+                    <div class="work-left">
+                        <h1 id="Por que">Por que a Imigração Ocorre?</h1>
+                    </div>
+                    <div class="work-right" align="justify">
+                        <p>Em função da busca por <b>melhores condições de vida,</b> a principal razão, por falta de condições para disporem de <b>documentação válida,</b>
+                        os indivíduos procuram alternativas mais fáceis, com nenhuma <b>burocracia,</b> porém <b>arriscadas</b> que muitas vezes desemrolam-se em mortes,
+                        prisões e nos piores casos em tráfico humano.</p><br>
+                        <p>Essa situação geralmente acontece por motivos de <b>crises</b> que os países enfrentam e que apresentam <b>barreiras</b> para a vivência dos moradores.
+                        É uma das atividades que mais cresce nos últimos anos e gera mais <b>instabilidade social,</b> pois aumnetam os <b>sentimentos xenofóbicos</b> e o
+                        <b>ódio pelo estrangeiro.</b> Além disso, é possível que o <b>governo</b> que receba esses grupos <b>não esteja preparado</b> e por isso são comuns
+                        os casos de culpa no imigrantes pela ascendência do <b>desemprego,</b> pela desconfiança que provoca uma instabilidade na <b>segurança interna</b>
+                        e no fato de que podem surgir cenários que violem os <b>direitos humanos.</b></p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Os Perigos da Imigração Ilegal-->
+        <div class="full-website bg-3rd" width="33%">
+            <div class="fixed-width">
+                <div class="about-section clearfix">
+                    <div class="about-contant" align="justify">
+                        <h1 id="Perigos" style="color:black">Os perigos da Imigração Ilegal</h1>
+                        <p>Em 2018, a <b>ONU - Organização das Nações Unidas</b> realizou uma operação que obteve o <b>relatório "Abusado e Negligenciado"</b> que traz alguns
+                        dos perigos enfrentados por imigrantes em situação irregular, como: exposição a maus tratos, sequestro, discriminação, misoginia que é acompanhada por
+                        exploração sexual, racismo, risco de morte por falta de cuidado à saúde, fome, sede, afogamento, acidentes e por aí vai.</p><br>
+                        <p>As pessoas que encaram qualquer um desses contextos quase sempre temrinam com o <b>psicológico fragilizado</b> ou com <b> consequências físicas</b>
+                        que podem perdurar por muitos anos ou uma visa inteira.</p>
+                </div>
+            </div>
+        </div>
+    <!--LINKS-->    
+    <div class="full-website bg-2nd">
+        <div class="fixed-width">
+            <div class="work-section clearfix">
+                <div class="work-left">
+                    <h2>Acesse Outros Conteúdos Dessa Matéria:</h2>
+                </div>
+                <div class="work-right">
+                        <a href="História da Migração.html" style="color:rgba(250, 250, 250, 0.768)">História da Migração</a><br>
+                        <a href="Causas da Migração.html" style="color:rgba(250, 250, 250, 0.768)">Causas da Migração</a><br>
+                        <a href="A Imigração no Brasil.html" style="color:rgba(250, 250, 250, 0.768)">A Imigração no Brasil</a><br>
+                        <a href="Tipos de Migração.html" style="color:rgba(250, 250, 250, 0.768)">Tipos de Migração</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+<div class="full-website bg-contact">
+    <div class="fixed-width">
+        <div class="contact-section clearfix">
+            <div class="contact-form">
+                <h1 style="color:black">Contate-nos</h1>
+                <form action="#">
+                    <input type="text" placeholder="Name"> <br> <br>
+                    <input type="email" placeholder="Email"> <br> <br>
+                    <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea> <br> <br>
+                    <input type="submit" class="btn" value="Send Message">
+                </form>
+            </div>
+            <div class="contact-map">
+                <h1 style="color:black">Onde pode me achar</h1>
+                <p style="color:black"><span><i class="fas fa-map-marker-alt"></i></span> Brasília - Distrito Federal, Brasil</p>
+                <hr>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491462.2319115244!2d-48.12679302624108!3d-15.774996593921331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18e45b91a3%3A0x24e8d3620bd85d7f!2sBras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1687482319654!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="Sobre.html" style="color:black">Sobre</a>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="Política de Privacidade definitivo.html" style="color:black">Política de Privacidade</a>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="Termos de Uso definitivo.html" style="color:black">Termos de Uso</a><p align="right" style="font-size: small;">©2023.Todos os Direitos Reservados</p>
+        </div>
+    </div>
+</div>
+        </body>
+       </html>
+</body>
+</html>

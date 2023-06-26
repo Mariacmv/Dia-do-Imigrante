@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade</title>
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.full-website {
+    max-width: 100%;
+}
+
+.fixed-width {
+    width: 1270px;
+    margin: auto;
+}
+
+.bg-frist {
+    background: url(https://www.smnadv.com.br/wp-content/uploads/2019/09/Os-direitos-de-imigrantes-em-territo%CC%81rio-nacional-ADVSN.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 20px 0 220px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header-section {}
+
+.header-left {
+    float: left;
+    width: 20%;
+    transition: .8s;
+
+}
+
+.header-left h1 {
+    color: white;
+    font-size: 40px;
+    float: ;
+}
+
+.header-manu {
+    float: left;
+    width: 60%;
+    text-align: right;
+}
+
+.header-manu ul {}
+
+.header-manu ul li {
+    display: inline-block;
+}
+
+.header-manu ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 15px;
+    transition: .5s;
+}
+
+.header-manu ul li a:hover {
+    color: red;
+}
+
+.header-icon {
+    float: left;
+    width: 20%;
+    text-align: right;
+}
+
+.header-icon ul {}
+
+.header-icon ul li {
+    display: inline-block;
+}
+
+.header-icon ul li a {
+    color: white;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.header-icon ul li a i {}
+
+.banner {
+    margin-top: 320px;
+    text-align: center;
+    color: white;
+    width: 530px;
+    margin: 320px auto 0 auto;
+}
+
+.banner h3 {
+    font-size: 22px;
+}
+
+.banner p {
+    display: inline-block;
+}
+
+.banner h1 {
+    font-size: 41px;
+    margin: 25px 0;
+    line-height: 60px;
+    align:center;
+}
+
+.banner a {
+    color: white;
+    border: 2px solid red;
+    padding: 10px 25px;
+    margin-left: 15px;
+}
+
+.bg-frist::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: -1;
+}
+
+/* Work Section */
+.bg-2nd {
+    background-color: black;
+}
+
+.work-section {
+    width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+}
+.work-left {
+    float: left;
+    width: 50%;
+}
+
+.work-left h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.work-left h2{ /*PARA OS LINKS*/
+    color:#f9f9f9;
+}
+
+.work-left h3 {
+    padding: 0 120px 0 0;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.work-left p {
+    font-size: 20px;
+    padding: 0 65px 0 0;
+    margin-bottom: 20px;
+    color: rgba(250, 250, 250, .4);
+}
+
+.work-left a {
+    display: inline-block;
+    background-color: #f13a12;
+    color: white;
+    padding: 16px 103px;
+    border-radius: 10px;
+}
+
+.work-right {
+    float: right;
+    width: 49%;
+    margin-top: 30px;
+    border-left: 2px solid rgba(250, 250, 250, .2);
+}
+
+.work-right h1 {
+    margin-bottom: 20px;
+    color: white;
+    margin-left: 55px;
+}
+
+.work-right h4 {
+    margin-bottom: 15px;
+    color: white;
+    margin-left: 55px;
+}
+/*aqui tá o padrão de cor no tema preto*/
+.work-right p {
+    color: rgba(250, 250, 250, 0.768);
+    margin-left: 55px;
+    margin-top: -10px;
+    margin-bottom: 14px;
+}
+
+
+/* About Section */
+.bg-3rd {
+    background-color: #f9f9f9;
+}
+
+.about-section {
+    padding: 70px 0;
+}
+
+.about-contant {
+    float: left;
+    width: 33%;
+    padding: 0 17px;
+    box-sizing: border-box;
+}
+
+.about-contant h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.about-contant p {
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.about-items {
+    float: right;
+    width: 60%;
+    text-align: right;
+}
+.item {
+    display: inline-block;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, .3);
+    margin-right: 70px;
+    background-color: #fff;
+}
+
+.item-img {
+    display: inline-block;
+}
+
+.item-img img {
+    width: 215px;
+    height: auto;
+}
+
+.item-contant {
+    text-align: left;
+    padding: 25px 15px;
+}
+
+.item-contant h1 {
+    display: inline-block;
+}
+
+.item-contant h4 {
+    display: inline-block;
+    padding: 0 30px 0 0;
+    line-height: 36px;
+}
+
+.item-contant span {
+    margin-left: 27px;
+}
+
+.item-contant span.face {
+    margin-left: 50px;
+}
+
+/* traning-section */
+.traning-section {
+    padding: 50px 0;
+}
+
+.traning-title {
+    text-align: center;
+}
+
+.traning-title h3 {
+    color: rgba(0, 0, 0, .4);
+}
+
+.traning-title h1 {}
+
+.traning-items {}
+
+.traning-itam {
+    float: left;
+    margin-left: 55px;
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .5);
+    background-color: #fff;
+    width: 28%;
+}
+
+.traning-itam-img {}
+
+.traning-itam-img img {
+    width: 100%;
+    height: 300px;
+}
+
+.traning-itam-contant {
+    padding: 20px 25px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.traning-itam-contant h1 {}
+
+.traning-itam-contant span {
+    display: block;
+    background: #f13a12;
+    width: 55px;
+    height: 55px;
+    box-sizing: border-box;
+    padding: 12px;
+    font-size: 23px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+}
+
+.traning-itam-contant h5 {
+    display: inline-block;
+    color: rgba(0, 0, 0, .5);
+}
+
+.traning-itam-contant p {
+    margin-top: 15px;
+    font-size: 21px;
+}
+
+/* Contact sectiion */
+.bg-contact {
+    background-color: #ddd;
+}
+
+.contact-section {
+    padding: 60px 0;
+}
+
+.contact-form {
+    float: left;
+    width: 43%;
+    margin-left: 70px;
+}
+
+.contact-form h1 {
+    margin-bottom: 35px;
+    font-size: 45px;
+}
+
+.contact-form form {}
+
+form input {
+    width: 80%;
+    height: 65px;
+    font-size: 30px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px; 
+}
+
+form input.btn {
+    width: 84%;
+    height: 40px;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+form textarea {
+    width: 80%;
+    height: 240px;
+    padding: 0 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+.contact-map {
+    float: right;
+    width: 43%;
+    margin-right: 77px;
+}
+
+.contact-map h1 {
+    margin-bottom: 32px;
+    font-size: 45px;
+}
+
+.contact-map p {
+    font-size: 23px;
+    padding: 0 222px 0 0;
+    margin-bottom: 44px;
+}
+
+.contact-map p span {
+    font-size: 32px;
+    color: red;
+}
+
+hr {
+    margin-bottom: 50px;
+    color: rgba(0, 0, 0, .4);
+}
+b{
+    color:orangered;
+}
+strong{
+    color:royalblue;
+}
+/*aqui embaixo é o botão*//*o display grid em body que causa as bordas nas laterais*/
+@import "https://unpkg.com/open-props";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gradient-1);
+  place-items: center;
+  min-height: 100vh;
+}
+
+button {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-6);
+  font-size:x-large;
+  color: var(--gray-8);
+  background: var(--gray-0);
+  border: 0;
+  padding: var(--size-4) var(--size-8);
+  transform: translateY(calc(var(--y, 0) * 1%)) scale(var(--scale));
+  transition: transform 0.1s;
+  position:absolute;
+}
+
+button:hover {
+  --y: -10;
+  --scale: 1.1;
+  --border-scale: 1;
+}
+
+button:active {
+  --y: 5%;
+  --scale: 0.9;
+  --border-scale: 0.9, 0.8;
+}
+
+button:before {
+  content: "";
+  position: absolute;
+  inset: calc(var(--size-3) * -1);
+  border: var(--size-2) solid var(--gray-0);
+  transform: scale(var(--border-scale, 0));
+  transition: transform 0.125s;
+  
+  --angle-one: 105deg;
+  --angle-two: 290deg;
+  --spread-one: 30deg;
+  --spread-two: 40deg;
+  --start-one: calc(var(--angle-one) - (var(--spread-one) * 0.5));
+  --start-two: calc(var(--angle-two) - (var(--spread-two) * 0.5));
+  --end-one: calc(var(--angle-one) + (var(--spread-one) * 0.5));
+  --end-two: calc(var(--angle-two) + (var(--spread-two) * 0.5));
+  
+  mask: conic-gradient(
+    transparent 0 var(--start-one),
+    white var(--start-one) var(--end-one),
+    transparent var(--end-one) var(--start-two),
+    white var(--start-two) var(--end-two),
+    transparent var(--end-two)
+  );
+  
+  z-index: -1;
+}
+/*aqui embaixo é tabela*/
+table{
+    padding-top: 20px;
+}
+.p{
+    font-size: 18px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, .6);
+    padding: 0 65px 0 0;
+}
+.footer {
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+    </style>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="full-website bg-frist">
+          <div class="fixed-width">
+              <div class="header-section clearfix">
+                  <div class="header-left">
+                      <h1><a href="Dia do Imigrante.html" style="color:white;">NoticiasSite.com</a></h1>
+                  </div>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <h1 align="center" style="color:#f9f9f9; font-size: 41px;">Política de Privacidade</h1>
+                </div>
+            </div>       
+        </div>
+      </div>
+<!-- branco-->
+<div class="full-website bg-3rd">
+    <div class="fixed-width">
+        <div class="about-section clearfix">
+                <p align="justify"><b>1– Sobre a Origem dos seus dados Pessoais:</b> Nosso site pode coletar alguns dados pessoais seus para diferentes objetivos. Para coletarmos estes dados, usamos as seguintes tecnologias: Website: Dentro do nosso site você poderá preencher formulários, enviar comentários e dúvidas, entrar em contato com nossa equipe ou se cadastrar na nossa plataforma, e seus dados serão salvos para posterior atendimento. Mensagens e comunicações: Quando você se comunica com nossa equipe, seja pelo Whatsapp, por SMS, por E-mail ou quaisquer outros tipos de chat, alguns dados podem ficar salvos para futura conferência e facilitar a comunicação com nossos clientes e usuários. De Modo Offline: Alguns dados podem ser coletados offline, como, por exemplo, em eventos e organizações, onde podemos coletar seu e-mail ou outros dados, para manter comunicação e informações necessárias que você precisa ter conhecimento. Dados de Terceiros: Algumas vezes, terceiros podem enviar para nossa empresa alguns dados seus, como, por exemplo, dados recebidos por mídias sociais (Como Facebook, instagram, Tiktok ou outras redes sociais), do governo ou intermediadoras de pagamentos.</p><br>
+                <p align="justify"><b>2 – Como e porque coletamos seus dados:</b> É importante que você, nosso usuário ou visitante, saiba como e quais dados pessoais coletamos e utilizamos quando você visita nosso site. Destacamos que sempre tentamos coletar o mínimo de dados possíveis para sua maior segurança, porém, alguns dados são essenciais para podermos entregar o melhor serviço possível e até para o funcionamento do site, conforme descrevemos abaixo: Marketing: Quando você preenche formulários e se cadastra no site, você poderá receber e-mails com promoções e novidades do site. Podemos coletar nome, e-mail e telefone. Navegação ao Site: quando você navega pelo nosso site, coletamos automaticamente dados como o seu endereço IP, tipo de navegador, páginas acessadas, tempo gasto em cada página e outras informações. Informações de contato: quando você entra em contato conosco, seja por e-mail, telefone ou chat, coletamos as suas informações de contato, como o seu nome, e-mail, número de telefone e a mensagem que você nos enviou. Informações de uso dos serviços: quando você usa os nossos serviços, coletamos dados sobre as suas atividades, como as pesquisas que você realiza, os vídeos que você assiste, as páginas que você visita e as compras que você faz e quando você compartilha conosco fotos, comentários, sugestões, perguntas, respostas, informações, textos, arquivos, gráficos, vídeos ou outros materiais, coletamos as informações que você nos enviar. Informações de localização: quando você usa os nossos serviços, coletamos dados de localização precisos para fornecer os serviços que você solicitou. Por exemplo, quando você solicita um serviço de entrega, coletamos seu endereço para enviar a entrega para o local certo.</p><br>
+                <p align="justify"><b>3 – Sobre o uso de Cookies</b> Usamos cookies no nosso website e aplicativos para melhorar a sua experiência de navegação no nosso website. Um cookie é um pequeno arquivo de texto que um site armazena no seu computador ou dispositivo móvel quando você visita o site. Os cookies nos permitem reconhecer o seu navegador e fornecer-lhe a melhor experiência ao navegar no nosso site. Além disso, os cookies nos ajudam a compreender quais seções do site são mais interessantes para você e quais conteúdos podem ser recomendados para você, site com o google, bing ou https://gpabrasil.com.br/, utilizam cookies, e ao visitar cada um, você deve verificar a politica referente a eles. Você pode a qualquer momento bloquear os cookies no seu navegador, ou limpar o cache para retirar os mesmos. É importante destacar que tentamos minimizar o uso de cookies não essenciais, mas utilizamos os necessários para entregar um melhor serviço, conforme a previsão de legítimo interesse na LGPD. Você pode a qualquer momento desativar os mesmos em seu navegador.</p><br>
+                <p align="justify"><b>4 – Com quem compartilhamos os seus dados pessoais:</b> Prestadores de Serviços: compartilhamos os seus dados pessoais com os nossos prestadores de serviços, que prestam serviços de marketing, análise de dados, pagamentos, envio de e-mails e outros serviços para nós. Esses prestadores de serviços só podem usar os seus dados pessoais para realizar esses serviços para nós e conforme as nossas instruções. Anunciantes e Parceiros Comerciais: também é possível que compartilhemos os seus dados pessoais com empresas que realizem anuncio, ou parceiros comerciais. No entanto, só compartilhamos os seus dados pessoais conforme as suas instruções. Comunidades Online: quando você se junta a uma das nossas comunidades online, os seus dados pessoais podem ser vistos por outros membros dessa comunidade. Investidores: podemos compartilhar os seus dados pessoais com os nossos investidores. No entanto, só compartilhamos os seus dados pessoais conforme as suas instruções. Filiais e Subsidiárias: podemos compartilhar os seus dados pessoais com as nossas filiais e subsidiárias. No entanto, só compartilhamos os seus dados pessoais conforme as suas instruções. Autoridades Governamentais e outras Partes: às vezes, podemos ser obrigados judicialmente a liberar ou divulgar os seus dados às autoridades governamentais, ou outras partes, conforme exigido por lei. Ou por outros motivos, como: (i) Cumprir uma obrigação legal; (ii) Proteger os direitos, a propriedade ou a segurança da Página; (iii) Evitar um dano real ou potencial aos bens, ou à segurança das pessoas; (iv) De outra forma, conforme permitido por lei.</p><br>
+                <p align="justify"><b>5- Sobre seus Direitos em relação aos Dados coletados</b> O presente texto tem por objetivo esclarecer os nossos leitores e visitantes sobre quais são os seus direitos em relação aos dados pessoais. De acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD), toda pessoa tem o direito à informação, à transparência, à liberdade e à autonomia na tomada de decisões. Com relação aos dados pessoais, a pessoa tem o direito ao acesso, à correção, à eliminação, à portabilidade, à limitação do tratamento e à oposição. A pessoa também tem o direito de negas a qualquer momento que seus dados pessoais sejam utilizados para fins de marketing e ao recebimento de comunicações comerciais. Para exercer os seus direitos, basta entrar em contato com a nossa equipe. Esclarecemos que os dados pessoais são tratados de forma confidencial e que tomamos todas e quaisquer medidas de segurança necessárias para garantir a proteção dos dados.</p><br>
+                <p align="justify"><b>6 – Sobre a segurança que aplicamos no tratamento dos seus dados</b> A segurança é um dos pilares fundamentais da nossa política de privacidade. Todos os dados pessoais que você fornecer ao site serão tratados com total confidencialidade e segurança, de acordo com as normas legais aplicáveis. Para garantir a proteção dos seus dados pessoais, o site utiliza diversas medidas de segurança, como por exemplo: Criptografia SSL (Secure Socket Layer); Firewalls; Sistemas de detecção de invasões; Monitoramento constante das redes; Uso de senhas seguras; Verificação periódica da segurança dos sistemas. Todas as informações pessoais são armazenadas em servidores seguros, protegidos contra acessos não autorizados, utilizando os mais modernos e avançados sistemas de segurança. Nossa equipe de segurança está constantemente monitorando os sistemas e atualizando as medidas de proteção, para garantir que seus dados estejam sempre seguros. Caso você tenha alguma dúvida ou preocupação em relação à segurança dos seus dados pessoais, entre em contato conosco.</p><br>
+                <p align="justify"><b>7 – Pedido de modificação, remoção ou alteração</b> Entendemos que você possa, eventualmente, querer modificar, remover ou alterar seus dados pessoais. Se você deseja fazer uma alteração, uma remoção ou uma modificação, entre em contato conosco e nós faremos o possível para atender à sua solicitação. No entanto, tenha em mente que, em alguns casos, pode não ser possível atender à sua solicitação, especialmente se for necessária para cumprir nossas obrigações legais ou contratuais. Além disso, lembre-se de que, se você solicitar a remoção de seus dados pessoais do nossos banco de dados, isso pode afetar o uso de nosso site e serviços. Se você não puder fazer uma alteração ou uma modificação, ou se desejar excluir seus dados pessoais, entre em contato conosco para podermos discutir outras opções, clicando na aba contato</p>
+        </div>
+    </div>
+</div>
+<!--contato-->            
+<div class="full-website bg-contact">
+  <div class="fixed-width">
+      <div class="contact-section clearfix">
+          <div class="contact-form">
+              <h1 style="color:#232323">Contate-nos</h1>
+              <form action="#">
+                  <input type="text" placeholder="Name"> <br> <br>
+                  <input type="email" placeholder="Email"> <br> <br>
+                  <textarea name="" id="" placeholder="Message" cols="30" rows="10"></textarea> <br> <br>
+                  <input type="submit" class="btn" value="Send Message">
+              </form>
+          </div>
+          <div class="contact-map">
+              <h1 style="color:#232323">Onde pode me achar</h1>
+              <p style="color:#232323"><span><i class="fas fa-map-marker-alt"></i></span> Brasília - Distrito Federal, Brasil</p>
+              <hr>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d491462.2319115244!2d-48.12679302624108!3d-15.774996593921331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18e45b91a3%3A0x24e8d3620bd85d7f!2sBras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1687482319654!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </div>
+      <div class="footer">
+          <a href="Sobre.html" style="color:black">Sobre</a>&ensp;&ensp;&ensp;&ensp;&ensp;<a href="Termos de Uso definitivo.html" style="color:black">Termos de Uso</a><p align="right" style="font-size: small;">©2023.Todos os Direitos Reservados</p>
+      </div>
+  </div>
+</div>
+</body>
+</html>    
+</body>
+</html>
